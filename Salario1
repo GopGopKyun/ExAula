@@ -1,0 +1,34 @@
+ #include <stdio.h>
+
+int main()
+{
+    float a, b;
+    char cargo;
+    printf("Insira seu salario: ");
+    scanf("%f", &a);
+    printf("(T): Tecnico  (G): Gerentes (D): Demais \n Insira seu cargo: ");
+    scanf("%s", &cargo);
+    if (cargo=='T')
+    {
+    b=a+(a/2);
+    printf("Seu salario será: %.2f", b);
+    return 0;
+    }
+    if (cargo=='G')
+    {
+    b=a+(a*0.3);
+    printf("Seu salario será: %.2f", b);
+    return 0;
+    }
+    if (cargo=='D')
+    {
+    b=a+(a/5);
+    printf("Seu salario será: %.2f", b);
+    return 0;
+    }
+    else
+    {
+    printf("Cargo indisponivel. Digite a letra de seu cargo.");
+    return 0;
+    }
+}
