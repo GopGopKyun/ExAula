@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main()
+{
+    float a, b;
+    printf("Insira seu salario: ");
+    scanf("%f", &a);
+    printf("Insira o  valor da prestação: ");
+    scanf("%f", &b);
+    if (b>(a*0.20))
+    {
+    printf("Empréstimo não pode ser concedido.");
+    }
+    else
+    {
+        printf("Empréstimo pode ser concedido");
+    }
+    
+    return 0;
+}
